@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333848109}
+  - component: {fileID: 333848110}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -156,6 +157,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &333848110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333848108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f2e7995380a1247be87a88322b9251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 1
+  leftStick: {fileID: 543176016}
+  rightStick: {fileID: 2113568978}
+  angleAdjustment: 0.5
+  downLeft: 0
+  downRight: 0
 --- !u!1 &334834551
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,14 +505,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543176016}
-  m_LocalRotation: {x: -0, y: -0, z: -0.13052624, w: 0.9914448}
+  m_LocalRotation: {x: 0, y: 0, z: -0.13052624, w: 0.9914449}
   m_LocalPosition: {x: -8.102133, y: -2.0295732, z: 0}
   m_LocalScale: {x: -7, y: 0.5, z: 1}
   m_Children:
   - {fileID: 1246056075}
   m_Father: {fileID: 333848109}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15}
 --- !u!1 &646168829
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,7 +878,6 @@ GameObject:
   - component: {fileID: 1246056075}
   - component: {fileID: 1246056077}
   - component: {fileID: 1246056076}
-  - component: {fileID: 1246056078}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -958,23 +976,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1246056078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246056074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f2e7995380a1247be87a88322b9251, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftStick: {fileID: 543176016}
-  rightStick: {fileID: 2113568978}
-  angleAdjustment: 0.5
-  downLeft: 0
-  downRight: 0
 --- !u!1 &1409271046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,7 +1662,6 @@ GameObject:
   - component: {fileID: 1997717019}
   - component: {fileID: 1997717020}
   - component: {fileID: 1997717021}
-  - component: {fileID: 1997717022}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -1760,23 +1760,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1997717022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997717018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f2e7995380a1247be87a88322b9251, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftStick: {fileID: 543176016}
-  rightStick: {fileID: 2113568978}
-  angleAdjustment: 0.5
-  downLeft: 0
-  downRight: 0
 --- !u!1 &2024649611
 GameObject:
   m_ObjectHideFlags: 0

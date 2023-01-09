@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Flipper : MonoBehaviour
 {
+    private float rotationSpeed = 100f;
+    private float angleAdjustment = 50f;
+
     [SerializeField] public GameObject leftStick;
     [SerializeField] public GameObject rightStick;
-    public float angleAdjustment = 0.5f;
+
+    float leftHandleRotation = -15f;
+    float rightHandleRotation = 15f;
+
     public bool downLeft = false;
     public bool downRight = false;
 
@@ -43,12 +49,18 @@ public class Flipper : MonoBehaviour
     public void ButtonDown()
     {
         if (downLeft)
-        {
-            leftStick.transform.Rotate(0, 0, 0.3f);
-        }
+            leftHandleRotation += Time.deltaTime * rotationSpeed;
+        else
+            leftHandleRotation -= Time.deltaTime * angleAdjustment;
         if (downRight)
-        {
-            rightStick.transform.Rotate(0, 0, -0.3f);
-        }
+            rightHandleRotation -= Time.deltaTime * rotationSpeed;
+        else
+            rightHandleRotation += Time.deltaTime * angleAdjustment;
+
+        leftHandleRotation = Mathf.Clamp(leftHandleRotation, -15f, 30f);
+        rightHandleRotation = Mathf.Clamp(rightHandleRotation, -30, 15);
+
+        leftStick.transform.rotation = Quaternion.AngleAxis(leftHandleRotation, Vector3.forward);
+        rightStick.transform.rotation = Quaternion.AngleAxis(rightHandleRotation, Vector3.forward);
     }
 }
