@@ -5,6 +5,7 @@ using UnityEngine;
 public class MenuManager : MonoBehaviour
 {
     public GameObject menuSet;
+    public GameObject startSet;
     public AudioSource musicsource;
     void Update()
     {
@@ -19,6 +20,10 @@ public class MenuManager : MonoBehaviour
                 menuSet.SetActive(true);
             }
         }
+    }
+    public void GameStart()
+    {
+        startSet.SetActive(false);
     }
     public void GameExit()
     {
