@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Flipper : MonoBehaviour
 {
-    private float rotationSpeed = 100f;
+    private float rotationSpeed = 200f;
     private float angleAdjustment = 50f;
 
     [SerializeField] public GameObject leftStick;
