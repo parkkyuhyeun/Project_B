@@ -650,6 +650,7 @@ MonoBehaviour:
   menuSet: {fileID: 1788656182}
   startSet: {fileID: 706052263}
   musicsource: {fileID: 1127398443}
+  time: 0
 --- !u!4 &649644841
 Transform:
   m_ObjectHideFlags: 0
@@ -675,7 +676,6 @@ GameObject:
   - component: {fileID: 706052264}
   - component: {fileID: 706052266}
   - component: {fileID: 706052265}
-  - component: {fileID: 706052267}
   m_Layer: 8
   m_Name: StartSet
   m_TagString: Untagged
@@ -742,20 +742,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706052263}
   m_CullTransparentMesh: 1
---- !u!114 &706052267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706052263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b33b77ed60f84264194f3385a7f8de62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startSet: {fileID: 0}
-  titleMaxY: 100
 --- !u!1 &805425519
 GameObject:
   m_ObjectHideFlags: 0

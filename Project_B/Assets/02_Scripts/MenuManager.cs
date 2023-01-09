@@ -8,26 +8,38 @@ public class MenuManager : MonoBehaviour
 	public GameObject menuSet;
 	public GameObject startSet;
 	public AudioSource musicsource;
-	public float time = 0;
+
+    private void Start()
+    {
+		Time.timeScale = 0;
+	}
 	void Update()
 	{
-		time = Time.deltaTime;
+		if (Input.GetMouseButtonDown(0))
+			GameStart();
+
 		if (Input.GetButtonDown("Cancel"))
 		{
 			if (menuSet.activeSelf)
 			{
+				Time.timeScale = 1f;
 				menuSet.SetActive(false);
 			}
 			else
 			{
+				Time.timeScale = 0f;
 				menuSet.SetActive(true);
 			}
-			GameStart();
 		}
 	}
-	public void GameStart()
+    public void GameStart()
 	{
-		startSet.GetComponent<RectTransform>().DOAnchorPosY(570f, 0.65f);
+		startSet.GetComponent<RectTransform>().DOAnchorPosY(570f, 0.65f).SetUpdate(true).OnComplete(() =>
+		{
+			startSet.SetActive(false);
+			Time.timeScale = 1f;
+		});
+		
 	}
 	public void GameExit()
 	{
