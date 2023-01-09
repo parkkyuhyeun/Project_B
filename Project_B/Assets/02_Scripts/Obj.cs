@@ -4,10 +4,5 @@ using UnityEngine;
 
 public class Obj : MonoBehaviour
 {
-    public bool isGround = false;
-    void Start()
-    {
-        isGround = false;
-    }
     
 }
