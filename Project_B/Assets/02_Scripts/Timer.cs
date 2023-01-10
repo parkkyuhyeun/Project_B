@@ -4,12 +4,14 @@ using UnityEngine;
 using TMPro;
 public class Timer : MonoBehaviour
 {
-    [SerializeField] public float setTime = 10f;
     [SerializeField] public TextMeshProUGUI timeText;
     [SerializeField] public GameObject replayButton;
+    private float setTime = 15f;
+    private float resultTime;
     void Start()
     {
         timeText.text = setTime.ToString();
+        resultTime = setTime;
     }
 
     void Update()
@@ -32,7 +34,7 @@ public class Timer : MonoBehaviour
     public void TimerReset()
     {
         replayButton.SetActive(false);
-        setTime = 10f;
+        setTime = resultTime;
         Time.timeScale = 1f;
     }
 }

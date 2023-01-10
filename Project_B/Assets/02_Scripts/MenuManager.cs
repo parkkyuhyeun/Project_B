@@ -9,7 +9,7 @@ public class MenuManager : MonoBehaviour
 	public GameObject startSet;
 	public AudioSource musicsource;
 
-    private void Start()
+    private void Awake()
     {
 		Time.timeScale = 0;
 	}
