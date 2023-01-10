@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 313996705051112530}
   - component: {fileID: 2638931294112043959}
   - component: {fileID: 5915761212854619485}
+  - component: {fileID: -3728719051967081574}
   m_Layer: 0
   m_Name: 04_Muffin
   m_TagString: Obj
@@ -210,3 +211,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &-3728719051967081574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147286643616759545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e901b031904834ea759105bda830c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

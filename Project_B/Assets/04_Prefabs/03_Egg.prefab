@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3826757260292303373}
   - component: {fileID: -8079831242562444404}
   - component: {fileID: 3527548773220643802}
+  - component: {fileID: 5235717945254103852}
   m_Layer: 0
   m_Name: 03_Egg
   m_TagString: Obj
@@ -188,3 +189,15 @@ PolygonCollider2D:
       - {x: 0.125, y: -0.87109375}
       - {x: 0.1796875, y: -0.86328125}
       - {x: 0.265625, y: -0.8359375}
+--- !u!114 &5235717945254103852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2229856102793836236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e901b031904834ea759105bda830c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

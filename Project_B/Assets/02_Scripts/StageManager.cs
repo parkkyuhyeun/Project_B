@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class StageManager : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
+    [SerializeField] private TextMeshProUGUI[] stagenumText;
     public int num = 0;
+    private float stagenum;
 
     Wingyu win;
     Timer timer;
@@ -13,6 +16,10 @@ public class StageManager : MonoBehaviour
     {
         win = transform.parent.Find("ObjFactory").GetComponent<Wingyu>();
         timer = transform.parent.Find("Timer").GetComponent<Timer>();
+
+        stagenum = num + 1;
+        stagenumText[0].text = $"Stage {stagenum}\n\nClear~!";
+        stagenumText[1].text = $"Stage {stagenum}";
     }
     public void Stage()
     {
@@ -31,5 +38,8 @@ public class StageManager : MonoBehaviour
         Time.timeScale = 1f;
         num++;
         StopCoroutine(BringNextStage());
+        stagenum = num + 1;
+        stagenumText[0].text = $"Stage {stagenum}\n\nClear~!";
+        stagenumText[1].text = $"Stage {stagenum}";
     }
 }

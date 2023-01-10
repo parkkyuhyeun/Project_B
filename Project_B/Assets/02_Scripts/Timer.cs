@@ -44,5 +44,6 @@ public class Timer : MonoBehaviour
     {
         setTime = resultTime;
         Time.timeScale = 1f;
+        time0 = false;
     }
 }

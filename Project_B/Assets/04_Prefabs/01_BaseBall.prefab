@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7392484706903714215}
   - component: {fileID: -5963149896056881340}
   - component: {fileID: -4959696447474795835}
+  - component: {fileID: -5492987080247409234}
   m_Layer: 0
   m_Name: 01_BaseBall
   m_TagString: Obj
@@ -121,3 +122,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &-5492987080247409234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8502834461619914670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e901b031904834ea759105bda830c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

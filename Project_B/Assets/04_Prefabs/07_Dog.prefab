@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3001623624342730775}
   - component: {fileID: -6515651568207162620}
   - component: {fileID: 5572052551781446791}
+  - component: {fileID: -5461594182603799638}
   m_Layer: 0
   m_Name: 07_Dog
   m_TagString: Obj
@@ -157,3 +158,15 @@ PolygonCollider2D:
       - {x: 0.24481216, y: 0.75795776}
       - {x: 0.100140184, y: 0.8493598}
       - {x: -0.014210392, y: 0.8792355}
+--- !u!114 &-5461594182603799638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5816743055557456856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e901b031904834ea759105bda830c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
