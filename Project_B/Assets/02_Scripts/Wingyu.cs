@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wingyu : MonoBehaviour
 {
-    [SerializeField] GameObject[] obj;
+    [SerializeField] public GameObject[] obj;
     [SerializeField] Transform objFactory;
     public int objNum = 0;
     
