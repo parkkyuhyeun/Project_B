@@ -5,7 +5,6 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     [SerializeField] public TextMeshProUGUI timeText;
-    [SerializeField] public GameObject replayButton;
     private float setTime = 15.02f;
     private float resultTime;
     public bool time0 = false;
@@ -43,7 +42,6 @@ public class Timer : MonoBehaviour
     }
     public void TimerReset()
     {
-        replayButton.SetActive(false);
         setTime = resultTime;
         Time.timeScale = 1f;
     }

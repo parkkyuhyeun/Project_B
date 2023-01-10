@@ -1407,11 +1407,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731216231}
   m_CullTransparentMesh: 1
---- !u!1 &759160214 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2938099041695020111, guid: cee43f5541fbfdc48a940fe219c8897a, type: 3}
-  m_PrefabInstance: {fileID: 2124632103}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &938857944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,7 +1996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9057cb01b27937640bda7774b1bc781e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakObj: {fileID: 759160214}
   panel: {fileID: 731216231}
   num: 0
 --- !u!1 &1215439388
@@ -2263,6 +2257,7 @@ MonoBehaviour:
   - {fileID: 147286643616759545, guid: c11b43b93e5417a448c226b7837c115e, type: 3}
   - {fileID: 3915400173335654306, guid: dee6b79c04600c44695c928b7cf3915b, type: 3}
   - {fileID: 5816743055557456856, guid: ec09a100d7ed4da4a91e96d0f3a94c61, type: 3}
+  - {fileID: 5816743055557456856, guid: f1dd6986b487092419d0d2dd6efff24e, type: 3}
   objFactory: {fileID: 1276396202}
   objNum: 0
 --- !u!1 &1435508341
@@ -3910,9 +3905,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2106bbe8db1ecb40af04a6e91f4dad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1980103815}
+  leftStick: {fileID: 609206011}
+  rightStick: {fileID: 1056357986}
   isDead: 0
-  time: 10
 --- !u!1 &2089307732
 GameObject:
   m_ObjectHideFlags: 0
@@ -4334,7 +4329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 1752278511}
-  replayButton: {fileID: 1980103815}
   time0: 0
 --- !u!4 &2134938785
 Transform:

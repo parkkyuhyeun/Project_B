@@ -63,4 +63,10 @@ public class Flipper : MonoBehaviour
         leftStick.transform.rotation = Quaternion.AngleAxis(leftHandleRotation, Vector3.forward);
         rightStick.transform.rotation = Quaternion.AngleAxis(rightHandleRotation, Vector3.forward);
     }
+    public void ResetQuaternion()
+    {
+        print("reset");
+        leftHandleRotation = -15f;
+        rightHandleRotation = 15f;
+    }
 }
