@@ -1,13 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class GameData : MonoBehaviour
+using System;
+[Serializable]
+public class GameData
 {
-    [SerializeField]
-
-    public class Data
-    {
-        public bool[] isUnlock = new bool[5];
-    }
+    public bool[] isClear = new bool[5];
 }
