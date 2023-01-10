@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8079831242562444404}
   m_Layer: 0
   m_Name: 04_Egg
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2229856102793836236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 7.8, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -93,7 +93,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 2229856102793836236}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 2c8ea4f65b3013049bfdda23f5824727, type: 2}
+  m_Material: {fileID: 6200000, guid: 72f306f40921e8847b3a328f2945d305, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -183,7 +183,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 2c8ea4f65b3013049bfdda23f5824727, type: 2}
+  m_Material: {fileID: 6200000, guid: 72f306f40921e8847b3a328f2945d305, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
