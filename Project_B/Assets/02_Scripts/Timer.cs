@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] public TextMeshProUGUI timeText;
     [SerializeField] public GameObject replayButton;
-    private float setTime = 15f;
+    private float setTime = 15.02f;
     private float resultTime;
     public bool time0 = false;
 
@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
     }
     void Start()
     {
-        timeText.text = setTime.ToString();
+        timeText.text = setTime.ToString("F2");
         resultTime = setTime;
         time0 = false;
     }
@@ -32,7 +32,7 @@ public class Timer : MonoBehaviour
         if(setTime > 0)
         {
             setTime -= Time.deltaTime;
-            timeText.text = $"{(Mathf.Ceil(setTime * 100.0f)) / 100.0f}";
+            timeText.text = (Mathf.Ceil(setTime * 100.0f) / 100.0f).ToString("F2");
         }
         else if (setTime <= 0 && !time0)
         {

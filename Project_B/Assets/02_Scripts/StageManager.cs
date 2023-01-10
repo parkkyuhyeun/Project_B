@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StageManager : MonoBehaviour
 {
-    [SerializeField] private GameObject breakObj;
     [SerializeField] private GameObject panel;
     public int num = 0;
 
@@ -14,10 +13,6 @@ public class StageManager : MonoBehaviour
     {
         win = transform.parent.Find("ObjFactory").GetComponent<Wingyu>();
         timer = transform.parent.Find("Timer").GetComponent<Timer>();
-    }
-    private void Start()
-    {
-        breakObj = win.obj[num];
     }
     public void Stage()
     {
@@ -29,7 +24,6 @@ public class StageManager : MonoBehaviour
         panel.SetActive(true);
         yield return new WaitForSecondsRealtime(2f);
         print("break");
-        Destroy(breakObj);
         win.objNum++;
         win.Win();
         panel.SetActive(false);
