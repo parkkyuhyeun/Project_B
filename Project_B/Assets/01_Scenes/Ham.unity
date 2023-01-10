@@ -650,7 +650,6 @@ MonoBehaviour:
   menuSet: {fileID: 1788656182}
   startSet: {fileID: 706052263}
   musicsource: {fileID: 1127398443}
-  time: 0
 --- !u!4 &649644841
 Transform:
   m_ObjectHideFlags: 0
@@ -1552,7 +1551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 56411a5b00b2f004da58f5a34b4c3a56, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1facba91725e7b44b00237747fe5560, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
