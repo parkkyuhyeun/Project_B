@@ -29,7 +29,7 @@ public class StageManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         panel.SetActive(true);
-        yield return new WaitForSecondsRealtime(0.1f);
+        yield return new WaitForSecondsRealtime(2f);
         print("break");
         win.Gacha();
         win.Win();
