@@ -8,6 +8,9 @@ public class MenuManager : MonoBehaviour
 	public GameObject menuSet;
 	public GameObject startSet;
 	public AudioSource musicsource;
+	public AudioSource btnMusicsource;
+
+	public bool isStart = true;
 
     private void Awake()
     {
@@ -15,7 +18,7 @@ public class MenuManager : MonoBehaviour
 	}
 	void Update()
 	{
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0) && isStart)
 			GameStart();
 
 		if (Input.GetButtonDown("Cancel"))
@@ -38,6 +41,7 @@ public class MenuManager : MonoBehaviour
 		{
 			startSet.SetActive(false);
 			Time.timeScale = 1f;
+			isStart = false;
 		});
 		
 	}
@@ -46,9 +50,22 @@ public class MenuManager : MonoBehaviour
 		Application.Quit();
 		Debug.Log("종료하기");
 	}
+	public void GameContinue()
+    {
+		Time.timeScale = 1f;
+		menuSet.SetActive(false);
+    }
 
 	public void SetMusicVolume(float volume)
 	{
 		musicsource.volume = volume;
 	}
+	public void SetBtnMusicVolume(float volume)
+    {
+		btnMusicsource.volume = volume;
+    }
+	public void BtnClick()
+    {
+		btnMusicsource.Play();
+    }
 }
