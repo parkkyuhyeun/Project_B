@@ -13,7 +13,6 @@ public class Timer : MonoBehaviour
     private void Awake()
     {
         stageM = transform.parent.Find("StageManager").GetComponent<StageManager>();
-        
     }
     void Start()
     {
@@ -25,11 +24,6 @@ public class Timer : MonoBehaviour
     void Update()
     {
         TimerSetting();
-
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            setTime = 0;
-        }
     }
 
     public void TimerSetting()
@@ -43,8 +37,6 @@ public class Timer : MonoBehaviour
         {
             timeText.text = "0.00";
             stageM.Stage();
-            FadeEffect.Instance.LoadingScene();
-            Destroy(FindObjectOfType<Obj>().transform.gameObject);
             time0 = true;
         }
     }

@@ -18,7 +18,7 @@ public class MenuManager : MonoBehaviour
 	}
 	void Update()
 	{
-		if (Input.touchCount > 0 && isStart)
+		if (Input.GetMouseButtonDown(0) && isStart)
 			GameStart();
 
 		if (Input.GetButtonDown("Cancel"))
