@@ -25,27 +25,23 @@ public class Flipper : MonoBehaviour
 
     private void Update()
     {
-        KeyDown();
         ButtonDown();
     }
-    private void KeyDown()
+    public void LButtonDown()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            downLeft = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            downLeft = false;
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            downRight = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            downRight = false;
-        }
+        downLeft = true;
+    }
+    public void LButtonUp()
+    {
+        downLeft = false;
+    }
+    public void RButtonDown()
+    {
+        downRight = true;
+    }
+    public void RButtonUp()
+    {
+        downRight = false;
     }
     public void ButtonDown()
     {
