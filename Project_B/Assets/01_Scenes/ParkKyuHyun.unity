@@ -2376,6 +2376,7 @@ MonoBehaviour:
   - {fileID: 5816743055557456856, guid: ade383ec29b3d9a4a9419a27491329ed, type: 3}
   - {fileID: 5816743055557456856, guid: 89a2e84276433dc45a71eb595f304af0, type: 3}
   - {fileID: 5816743055557456856, guid: c41560d174d27c94683aa0e17b5e082d, type: 3}
+  - {fileID: 5816743055557456856, guid: 49a8965d44d95e14bb55ab366ae8cd66, type: 3}
   objFactory: {fileID: 1276396202}
   objNum: 0
 --- !u!1 &1435508341
