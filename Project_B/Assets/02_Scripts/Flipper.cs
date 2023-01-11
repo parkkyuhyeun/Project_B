@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Flipper : MonoBehaviour
 {
-    private float rotationSpeed = 170f;
-    private float angleAdjustment = 50f;
-
     [SerializeField] public GameObject leftStick;
     [SerializeField] public GameObject rightStick;
 
-    float leftHandleRotation = -15f;
-    float rightHandleRotation = 15f;
+    private float rotationSpeed = 170f;
+    private float angleAdjustment = 50f;
+    private float leftHandleRotation = -15f;
+    private float rightHandleRotation = 15f;
+
+    public AudioSource bounceSound;
 
     public bool downLeft = false;
     public bool downRight = false;
@@ -68,5 +69,12 @@ public class Flipper : MonoBehaviour
         print("reset");
         leftHandleRotation = -15f;
         rightHandleRotation = 15f;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obj"))
+        {
+            bounceSound.Play();
+        }
     }
 }
