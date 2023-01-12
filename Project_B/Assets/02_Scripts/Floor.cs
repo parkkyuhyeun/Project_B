@@ -12,6 +12,7 @@ public class Floor : MonoBehaviour
     [SerializeField] StageManager stageM;
     [SerializeField] TextMeshProUGUI stageText;
     [SerializeField] AudioSource gameoverSound;
+    [SerializeField] AudioSource bgmSound;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -32,6 +33,7 @@ public class Floor : MonoBehaviour
                 stageText.text = $"{stageM.num + 1} Stage";
                 gameOverPanel.SetActive(true);
                 gameoverSound.Play();
+                bgmSound.Stop();
             }
         }
     }

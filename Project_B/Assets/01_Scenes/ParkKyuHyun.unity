@@ -1705,7 +1705,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 49d93bf3e78d3ba4c937fa97cfca74d4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ac638882a759c774f98e4ceffe502dea, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4247,7 +4247,8 @@ MonoBehaviour:
   lifeM: {fileID: 277930029}
   stageM: {fileID: 1203659735}
   stageText: {fileID: 830232444}
-  gameoverSound: {fileID: 0}
+  gameoverSound: {fileID: 588401543}
+  bgmSound: {fileID: 2115064699}
 --- !u!212 &1788758602
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5244,6 +5245,7 @@ MonoBehaviour:
   stageM: {fileID: 1203659735}
   stageText: {fileID: 830232444}
   gameoverSound: {fileID: 588401543}
+  bgmSound: {fileID: 2115064699}
 --- !u!1 &2089307732
 GameObject:
   m_ObjectHideFlags: 0
@@ -5627,7 +5629,8 @@ MonoBehaviour:
   lifeM: {fileID: 277930029}
   stageM: {fileID: 1203659735}
   stageText: {fileID: 830232444}
-  gameoverSound: {fileID: 0}
+  gameoverSound: {fileID: 588401543}
+  bgmSound: {fileID: 2115064699}
 --- !u!212 &2122504254
 SpriteRenderer:
   m_ObjectHideFlags: 0
