@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class LifeManager : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI lifeText;
+    public Image[] lifeImage;
     public int life = 3;
-    void Start()
+    public void UpdateLifeIcon(int life)
     {
-        lifeText.text = $"Life : {life}";
-    }
-    public void SetLife()
-    {
-        lifeText.text = $"Life : {life}";
+        for (int i = 0; i < 3; i++)
+        {
+            lifeImage[i].color = new Color(1, 1, 1, 0);
+        }
+        for (int i = 0; i < life; i++)
+        {
+            lifeImage[i].color = new Color(1, 1, 1, 1);
+        }
     }
 }

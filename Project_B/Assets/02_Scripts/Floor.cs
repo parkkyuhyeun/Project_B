@@ -14,9 +14,11 @@ public class Floor : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Obj"))
+        if (collision.gameObject.CompareTag("Obj"))
         {
-            if(lifeM.life > 1)
+            lifeM.life--;
+            lifeM.UpdateLifeIcon(lifeM.life);
+            if (lifeM.life != 0)
             {
                 isDead = true;
                 FindObjectOfType<Timer>().TimerReset();
@@ -24,9 +26,6 @@ public class Floor : MonoBehaviour
                 FindObjectOfType<Flipper>().ResetQuaternion();
                 isDead = false;
                 Destroy(collision.gameObject);
-                print("Break");
-                lifeM.life--;
-                lifeM.SetLife();
             }
             else
             {
@@ -37,5 +36,5 @@ public class Floor : MonoBehaviour
             }
         }
     }
-    
+
 }
