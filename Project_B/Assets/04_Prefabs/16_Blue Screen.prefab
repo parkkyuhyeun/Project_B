@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3001623624342730775}
   - component: {fileID: -6515651568207162620}
   - component: {fileID: 6648221190332181026}
-  - component: {fileID: -18021690892825413}
+  - component: {fileID: -2821258004296046483}
+  - component: {fileID: 4951988579728378814}
   m_Layer: 0
   m_Name: 16_Blue Screen
   m_TagString: Obj
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5816743055557456856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.8, y: 0.6, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -118,7 +119,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e901b031904834ea759105bda830c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &-18021690892825413
+--- !u!70 &-2821258004296046483
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5816743055557456856}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.92, y: 1.05}
+  m_Direction: 1
+--- !u!61 &4951988579728378814
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,5 +159,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.92, y: 1.08}
+  m_Size: {x: 1.9, y: 1.08}
   m_EdgeRadius: 0
