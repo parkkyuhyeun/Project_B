@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6151591840366743789}
   - component: {fileID: 3001623624342730775}
   - component: {fileID: -6515651568207162620}
-  - component: {fileID: 5572052551781446791}
   - component: {fileID: -5461594182603799638}
+  - component: {fileID: 8011129069584280815}
   m_Layer: 0
   m_Name: 07_Dog
   m_TagString: Obj
@@ -106,58 +106,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!60 &5572052551781446791
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5816743055557456856}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 5.12, y: 5.12}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.16175424, y: 0.85738504}
-      - {x: -0.2814467, y: 0.81455714}
-      - {x: -0.42488292, y: 0.7004709}
-      - {x: -0.48623946, y: 0.56876695}
-      - {x: -0.5772637, y: 0.41950434}
-      - {x: -0.6682709, y: 0.17345156}
-      - {x: -0.69334257, y: -0.037843883}
-      - {x: -0.6987936, y: -0.2260332}
-      - {x: -0.66810435, y: -0.39849126}
-      - {x: -0.6039642, y: -0.5395104}
-      - {x: -0.50542223, y: -0.6582215}
-      - {x: -0.41022816, y: -0.75333476}
-      - {x: -0.2771961, y: -0.82523525}
-      - {x: -0.07477716, y: -0.8706562}
-      - {x: 0.16196609, y: -0.8383235}
-      - {x: 0.32207155, y: -0.80078125}
-      - {x: 0.44389322, y: -0.66853493}
-      - {x: 0.5453316, y: -0.5031891}
-      - {x: 0.593473, y: -0.32496265}
-      - {x: 0.6251008, y: -0.13955079}
-      - {x: 0.61052954, y: 0.02071375}
-      - {x: 0.55922025, y: 0.25296623}
-      - {x: 0.44984338, y: 0.53760684}
-      - {x: 0.35795605, y: 0.67398876}
-      - {x: 0.24481216, y: 0.75795776}
-      - {x: 0.100140184, y: 0.8493598}
-      - {x: -0.014210392, y: 0.8792355}
 --- !u!114 &-5461594182603799638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,3 +118,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e901b031904834ea759105bda830c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &8011129069584280815
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5816743055557456856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04, y: 0}
+  m_Size: {x: 1.31, y: 1.75}
+  m_Direction: 0
