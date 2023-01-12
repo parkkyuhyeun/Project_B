@@ -4100,6 +4100,8 @@ MonoBehaviour:
   rightStick: {fileID: 1056357986}
   gameOverPanel: {fileID: 1364631324}
   lifeM: {fileID: 277930029}
+  stageM: {fileID: 1203659735}
+  stageText: {fileID: 830232444}
   isDead: 0
 --- !u!212 &1788758602
 SpriteRenderer:
@@ -5095,6 +5097,8 @@ MonoBehaviour:
   rightStick: {fileID: 1056357986}
   gameOverPanel: {fileID: 1364631324}
   lifeM: {fileID: 277930029}
+  stageM: {fileID: 1203659735}
+  stageText: {fileID: 830232444}
   isDead: 0
 --- !u!1 &2089307732
 GameObject:
@@ -5479,6 +5483,8 @@ MonoBehaviour:
   rightStick: {fileID: 1056357986}
   gameOverPanel: {fileID: 1364631324}
   lifeM: {fileID: 277930029}
+  stageM: {fileID: 1203659735}
+  stageText: {fileID: 830232444}
   isDead: 0
 --- !u!212 &2122504254
 SpriteRenderer:
