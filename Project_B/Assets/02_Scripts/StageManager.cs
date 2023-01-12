@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class StageManager : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class StageManager : MonoBehaviour
     public void Stage()
     {
         StartCoroutine(BringNextStage());
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene(0);
     }
     public IEnumerator BringNextStage()
     {

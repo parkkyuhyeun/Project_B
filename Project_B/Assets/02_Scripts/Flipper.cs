@@ -62,9 +62,9 @@ public class Flipper : MonoBehaviour
     }
     public void ResetQuaternion()
     {
-        print("reset");
         leftHandleRotation = -15f;
         rightHandleRotation = 15f;
+        print("reset");
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
