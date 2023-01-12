@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
 	public AudioSource musicsource;
 	public AudioSource btnMusicsource;
 	public AudioSource bounceMusicsource;
+	public AudioSource gameoverMusicsource;
 
 	public bool isStart = true;
 
@@ -69,6 +70,10 @@ public class MenuManager : MonoBehaviour
 	public void SetBounceMusicVolume(float volume)
     {
 		bounceMusicsource.volume = volume;
+    }
+	public void SetGameOverMusicVolume(float volume)
+    {
+		gameoverMusicsource.volume = volume;
     }
 	public void BtnClick()
     {

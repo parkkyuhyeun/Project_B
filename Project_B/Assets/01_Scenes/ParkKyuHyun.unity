@@ -3015,6 +3015,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2027612954}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: SetGameOverMusicVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1203659733
 GameObject:
   m_ObjectHideFlags: 0
@@ -5089,6 +5101,7 @@ MonoBehaviour:
   musicsource: {fileID: 2115064699}
   btnMusicsource: {fileID: 402882258}
   bounceMusicsource: {fileID: 158314164}
+  gameoverMusicsource: {fileID: 0}
   isStart: 0
 --- !u!4 &2027612955
 Transform:
