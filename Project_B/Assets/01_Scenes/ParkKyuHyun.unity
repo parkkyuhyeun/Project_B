@@ -2866,7 +2866,7 @@ MonoBehaviour:
       - m_Target: {fileID: 2027612954}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: SetBounceMusicVolume
-        m_Mode: 4
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4955,7 +4955,7 @@ MonoBehaviour:
   startSet: {fileID: 458157790}
   musicsource: {fileID: 2115064699}
   btnMusicsource: {fileID: 402882258}
-  bounceMusicsource: {fileID: 0}
+  bounceMusicsource: {fileID: 158314164}
   isStart: 0
 --- !u!4 &2027612955
 Transform:

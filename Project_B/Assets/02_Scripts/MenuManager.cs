@@ -16,6 +16,7 @@ public class MenuManager : MonoBehaviour
     private void Awake()
     {
 		Time.timeScale = 0;
+		SetMusicVolume(musicsource.volume);
 	}
 	void Update()
 	{
@@ -59,7 +60,7 @@ public class MenuManager : MonoBehaviour
 
 	public void SetMusicVolume(float volume)
 	{
-		musicsource.volume = volume;
+		musicsource.volume = volume / 2f;
 	}
 	public void SetBtnMusicVolume(float volume)
     {
