@@ -7,7 +7,7 @@ public class Flipper : MonoBehaviour
     [SerializeField] public GameObject leftStick;
     [SerializeField] public GameObject rightStick;
 
-    private float rotationSpeed = 170f;
+    private float rotationSpeed = 150f;
     private float angleAdjustment = 50f;
     private float leftHandleRotation = -15f;
     private float rightHandleRotation = 15f;
