@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3001623624342730775}
   - component: {fileID: -6515651568207162620}
   - component: {fileID: 6648221190332181026}
-  - component: {fileID: -3035177772796324222}
+  - component: {fileID: -1525721708378214890}
   m_Layer: 0
   m_Name: 13_KimJaehui
   m_TagString: Obj
@@ -118,8 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e901b031904834ea759105bda830c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &-3035177772796324222
-PolygonCollider2D:
+--- !u!70 &-1525721708378214890
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -131,40 +131,6 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 5.12, y: 5.12}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.22213015, y: 0.7925202}
-      - {x: -0.46785384, y: 0.5814652}
-      - {x: -0.5379799, y: 0.36134446}
-      - {x: -0.51443726, y: -0.012275483}
-      - {x: -0.582809, y: -0.077596575}
-      - {x: -0.5798422, y: -0.21671592}
-      - {x: -0.5097229, y: -0.357339}
-      - {x: -0.44627774, y: -0.40639815}
-      - {x: -0.433938, y: -0.48346138}
-      - {x: -0.32867253, y: -0.63567233}
-      - {x: -0.1704752, y: -0.76449835}
-      - {x: 0.021826848, y: -0.82871306}
-      - {x: 0.18294732, y: -0.78339916}
-      - {x: 0.35478398, y: -0.6681167}
-      - {x: 0.48564115, y: -0.47385666}
-      - {x: 0.51635575, y: -0.38699526}
-      - {x: 0.5776174, y: -0.34380993}
-      - {x: 0.65001243, y: -0.15314747}
-      - {x: 0.63221365, y: -0.068251185}
-      - {x: 0.5829707, y: -0.027121406}
-      - {x: 0.6033714, y: 0.15615575}
-      - {x: 0.5840467, y: 0.440273}
-      - {x: 0.44923857, y: 0.609468}
-      - {x: 0.28433162, y: 0.7638669}
-      - {x: 0.031331986, y: 0.8453007}
+  m_Offset: {x: 0.03, y: 0}
+  m_Size: {x: 1.08, y: 1.6}
+  m_Direction: 0
