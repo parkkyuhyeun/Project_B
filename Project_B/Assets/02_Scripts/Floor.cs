@@ -34,7 +34,7 @@ public class Floor : MonoBehaviour
             {
                 isDead = true;
                 Time.timeScale = 0f;
-                stageText.text = $"{stageM.num} Stage";
+                stageText.text = $"{stageM.num + 1} Stage";
                 gameOverPanel.SetActive(true);
                 isDead = false;
             }
