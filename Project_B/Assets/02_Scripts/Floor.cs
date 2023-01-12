@@ -20,8 +20,8 @@ public class Floor : MonoBehaviour
             lifeM.UpdateLifeIcon(lifeM.life);
             if (lifeM.life != 0)
             {
-                FindObjectOfType<Timer>().TimerReset();
                 FindObjectOfType<Flipper>().ResetQuaternion();
+                FindObjectOfType<Timer>().TimerReset();
                 FindObjectOfType<Wingyu>().Win();
                 Destroy(collision.gameObject);
             }

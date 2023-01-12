@@ -42,6 +42,7 @@ public class StageManager : MonoBehaviour
         timer.TimerReset();
         Time.timeScale = 1f;
         num++;
+        FindObjectOfType<Flipper>().ResetQuaternion();
         StopCoroutine(BringNextStage());
         stagenum = num + 1;
         stagenumText[0].text = $"Stage {stagenum}\n\nÅ¬¸®¾î";

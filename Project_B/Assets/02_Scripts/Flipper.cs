@@ -12,8 +12,6 @@ public class Flipper : MonoBehaviour
     private float leftHandleRotation = -15f;
     private float rightHandleRotation = 15f;
 
-    public AudioSource bounceSound;
-
     public bool downLeft = false;
     public bool downRight = false;
 
@@ -64,13 +62,5 @@ public class Flipper : MonoBehaviour
     {
         leftHandleRotation = -15f;
         rightHandleRotation = 15f;
-        print("reset");
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Obj"))
-        {
-            bounceSound.Play();
-        }
     }
 }

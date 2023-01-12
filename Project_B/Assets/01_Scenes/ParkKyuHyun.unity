@@ -625,6 +625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 286236675}
+  - component: {fileID: 286236674}
   m_Layer: 0
   m_Name: Flipper
   m_TagString: Untagged
@@ -632,6 +633,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &286236674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286236673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f2e7995380a1247be87a88322b9251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftStick: {fileID: 609206011}
+  rightStick: {fileID: 1056357986}
+  downLeft: 0
+  downRight: 0
 --- !u!4 &286236675
 Transform:
   m_ObjectHideFlags: 0
@@ -892,7 +909,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1435508346}
+        - m_Target: {fileID: 286236674}
           m_TargetAssemblyTypeName: Flipper, Assembly-CSharp
           m_MethodName: LButtonUp
           m_Mode: 1
@@ -908,7 +925,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1435508346}
+        - m_Target: {fileID: 286236674}
           m_TargetAssemblyTypeName: Flipper, Assembly-CSharp
           m_MethodName: LButtonDown
           m_Mode: 1
@@ -1367,14 +1384,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 478286001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f2e7995380a1247be87a88322b9251, type: 3}
+  m_Script: {fileID: 11500000, guid: 82989e9ea687a7143bb20e97243b5b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftStick: {fileID: 609206011}
-  rightStick: {fileID: 1056357986}
   bounceSound: {fileID: 158314164}
-  downLeft: 0
-  downRight: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,14 +3433,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1435508341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f2e7995380a1247be87a88322b9251, type: 3}
+  m_Script: {fileID: 11500000, guid: 82989e9ea687a7143bb20e97243b5b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftStick: {fileID: 609206011}
-  rightStick: {fileID: 1056357986}
   bounceSound: {fileID: 158314164}
-  downLeft: 0
-  downRight: 0
 --- !u!1 &1564923291
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,7 +3720,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1435508346}
+        - m_Target: {fileID: 286236674}
           m_TargetAssemblyTypeName: Flipper, Assembly-CSharp
           m_MethodName: RButtonUp
           m_Mode: 1
@@ -3727,7 +3736,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1435508346}
+        - m_Target: {fileID: 286236674}
           m_TargetAssemblyTypeName: Flipper, Assembly-CSharp
           m_MethodName: RButtonDown
           m_Mode: 1
